@@ -9,6 +9,7 @@
 #import "OCTClient+Activity.h"
 #import "OCTClient+Private.h"
 #import "OCTRepository.h"
+#import "OCTBranch.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 @implementation OCTClient (Activity)
@@ -50,6 +51,30 @@
 	NSString *path = [NSString stringWithFormat:@"/user/starred/%@/%@", repository.ownerLogin, repository.name];
 	NSMutableURLRequest *request = [self requestWithMethod:@"DELETE" path:path parameters:nil];
 	return [[self enqueueRequest:request resultClass:nil] ignoreValues];
+}
+
+- (RACSignal *)createIssueWithTitle:(NSString*)title
+							   body:(NSString*)body
+						   assignee:(OCTUser*)assignee
+						  milestone:(NSString*)milestone
+							 labels:(NSArray*)labels
+					   inRepository:(OCTRepository *)repository {
+	NSParameterAssert(title != nil);
+	NSParameterAssert(repository != nil);
+	
+	NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+	parameters[@"title"] = title;
+	if (body) {
+		parameters[@"body"] = body;
+	}
+	if (assignee){
+		parameters[@"assignee"] = assignee.name;
+	}
+	
+	NSString *path = [NSString stringWithFormat:@"repos/%@/%@/issues", repository.ownerLogin, repository.name];
+	NSMutableURLRequest *request = [self requestWithMethod:@"POST" path:path parameters:parameters notMatchingEtag:nil];
+	
+	return [[self enqueueRequest:request resultClass:OCTIssue.class] oct_parsedResults];
 }
 
 @end

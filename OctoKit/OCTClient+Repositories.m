@@ -136,4 +136,15 @@
 	return [[self enqueueRequest:request resultClass:OCTIssue.class] oct_parsedResults];
 }
 
+- (RACSignal *)fetchAssigneesForRepositoryWithName:(NSString *)name owner:(NSString *)owner
+{
+	NSParameterAssert(name.length > 0);
+	NSParameterAssert(owner.length > 0);
+	
+	NSString *path = [NSString stringWithFormat:@"/repos/%@/%@/assignees", owner, name];
+	NSMutableURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:nil notMatchingEtag:nil];
+	
+	return [[self enqueueRequest:request resultClass:OCTUser.class] oct_parsedResults];
+}
+
 @end

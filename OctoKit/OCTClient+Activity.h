@@ -36,4 +36,11 @@
 // is not `authenticated`, the signal will error immediately.
 - (RACSignal *)unstarRepository:(OCTRepository *)repository;
 
+- (RACSignal *)createIssueWithTitle:(NSString*)title
+							   body:(NSString*)body
+						   assignee:(OCTUser*)assignee
+						  milestone:(NSString*)milestone
+							 labels:(NSArray*)labels
+					   inRepository:(OCTRepository *)repository;
+
 @end

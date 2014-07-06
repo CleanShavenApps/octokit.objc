@@ -106,4 +106,6 @@
 
 - (RACSignal *)fetchIssuesForRepositoryWithName:(NSString *)name owner:(NSString *)owner;
 
+- (RACSignal *)fetchAssigneesForRepositoryWithName:(NSString *)name owner:(NSString *)owner;
+
 @end
