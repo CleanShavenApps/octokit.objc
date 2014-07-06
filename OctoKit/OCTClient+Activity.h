@@ -9,6 +9,7 @@
 
 @class RACSignal;
 @class OCTRepository;
+@class OCTIssue;
 
 @interface OCTClient (Activity)
 
@@ -42,5 +43,9 @@
 						  milestone:(int64_t)milestone
 							 labels:(NSArray*)labels
 					   inRepository:(OCTRepository *)repository;
+
+- (RACSignal *)createCommentWithBody:(NSString*)body
+							   issue:(OCTIssue*)issue
+						inRepository:(OCTRepository *)repository;
 
 @end

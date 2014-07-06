@@ -9,6 +9,7 @@
 #import "OCTClient+Activity.h"
 #import "OCTClient+Private.h"
 #import "OCTRepository.h"
+#import "OCTIssue.h"
 #import "OCTBranch.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
@@ -78,6 +79,25 @@
 	}
 	
 	NSString *path = [NSString stringWithFormat:@"repos/%@/%@/issues", repository.ownerLogin, repository.name];
+	NSMutableURLRequest *request = [self requestWithMethod:@"POST" path:path parameters:parameters notMatchingEtag:nil];
+	
+	return [[self enqueueRequest:request resultClass:OCTIssue.class] oct_parsedResults];
+}
+
+- (RACSignal *)createCommentWithBody:(NSString*)body
+							   issue:(OCTIssue*)issue
+						inRepository:(OCTRepository *)repository
+{
+	NSParameterAssert(body != nil);
+	NSParameterAssert(issue != nil);
+	NSParameterAssert(repository != nil);
+	
+	NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+	if (body) {
+		parameters[@"body"] = body;
+	}
+	
+	NSString *path = [NSString stringWithFormat:@"repos/%@/%@/issues/%@/comments", repository.ownerLogin, repository.name, issue.objectID];
 	NSMutableURLRequest *request = [self requestWithMethod:@"POST" path:path parameters:parameters notMatchingEtag:nil];
 	
 	return [[self enqueueRequest:request resultClass:OCTIssue.class] oct_parsedResults];
