@@ -104,4 +104,6 @@
 // Returns a signal of zero or one OCTGitCommit.
 - (RACSignal *)fetchCommitFromRepository:(OCTRepository *)repository SHA:(NSString *)SHA;
 
+- (RACSignal *)fetchIssuesForRepositoryWithName:(NSString *)name owner:(NSString *)owner;
+
 @end

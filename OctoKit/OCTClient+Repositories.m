@@ -126,4 +126,14 @@
 	return [[self enqueueRequest:request resultClass:OCTGitCommit.class] oct_parsedResults];
 }
 
+- (RACSignal *)fetchIssuesForRepositoryWithName:(NSString *)name owner:(NSString *)owner {
+	NSParameterAssert(name.length > 0);
+	NSParameterAssert(owner.length > 0);
+	
+	NSString *path = [NSString stringWithFormat:@"/repos/%@/%@/issues", owner, name];
+	NSMutableURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:nil notMatchingEtag:nil];
+	
+	return [[self enqueueRequest:request resultClass:OCTIssue.class] oct_parsedResults];
+}
+
 @end
