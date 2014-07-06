@@ -443,6 +443,90 @@
 			remoteGlobalIDString = D0871FE3169E309900016ACA;
 			remoteInfo = OctoClient;
 		};
+		F815CA4A196989530006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA42196989520006C4E1 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC3C15F72B23004E8054;
+			remoteInfo = Mantle;
+		};
+		F815CA4C196989530006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA42196989520006C4E1 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC5415F72B23004E8054;
+			remoteInfo = "Mantle Tests";
+		};
+		F815CA4E196989530006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA42196989520006C4E1 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC7915F72BC7004E8054;
+			remoteInfo = "Mantle-iOS";
+		};
+		F815CA50196989530006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA42196989520006C4E1 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC8715F72BC7004E8054;
+			remoteInfo = "Mantle-iOS Tests";
+		};
+		F815CA52196989530006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA42196989520006C4E1 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0A56B461804B04900A84EDC;
+			remoteInfo = "Mantle-Mac";
+		};
+		F815CA5E1969895C0006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88037F8315056328001A5B19;
+			remoteInfo = ReactiveCocoa;
+		};
+		F815CA601969895C0006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F440AB153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		F815CA621969895C0006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88CDF7DC15000FCF00163A9F;
+			remoteInfo = ReactiveCocoaTests;
+		};
+		F815CA641969895C0006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FAF5223174D4C2000CAC810;
+			remoteInfo = "ReactiveCocoaTests-iOS";
+		};
+		F815CA661969895C0006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1860F412177C91B500C7B3C9;
+			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHost";
+		};
+		F815CA681969895C0006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1860F430177C91B500C7B3C9;
+			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHostTests";
+		};
+		F815CA6A1969895C0006C4E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D05AD39417F2D56F0080895B;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -662,6 +746,8 @@
 		F6CF78D216E993A500A75F63 /* RACSignal+OCTClientAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+OCTClientAdditions.h"; sourceTree = "<group>"; };
 		F6CF78D316E993A500A75F63 /* RACSignal+OCTClientAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+OCTClientAdditions.m"; sourceTree = "<group>"; };
 		F6E2EC3F16EB04C50096C268 /* RACSignalAdditionsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSignalAdditionsSpec.m; sourceTree = "<group>"; };
+		F815CA42196989520006C4E1 /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = External/Mantle/Mantle.xcodeproj; sourceTree = "<group>"; };
+		F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -789,6 +875,8 @@
 		D0871E9C169E2EFC00016ACA = {
 			isa = PBXGroup;
 			children = (
+				F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */,
+				F815CA42196989520006C4E1 /* Mantle.xcodeproj */,
 				D0871EB1169E2EFC00016ACA /* OctoKit */,
 				D0871EC7169E2EFC00016ACA /* OctoKitTests */,
 				D0871EAA169E2EFC00016ACA /* Frameworks */,
@@ -1238,6 +1326,32 @@
 			name = Server;
 			sourceTree = "<group>";
 		};
+		F815CA43196989520006C4E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F815CA4B196989530006C4E1 /* Mantle.framework */,
+				F815CA4D196989530006C4E1 /* Mantle Tests.octest */,
+				F815CA4F196989530006C4E1 /* libMantle-iOS.a */,
+				F815CA51196989530006C4E1 /* Mantle-iOS Tests.octest */,
+				F815CA53196989530006C4E1 /* libMantle-Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F815CA551969895C0006C4E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F815CA5F1969895C0006C4E1 /* ReactiveCocoa.framework */,
+				F815CA611969895C0006C4E1 /* libReactiveCocoa-iOS.a */,
+				F815CA631969895C0006C4E1 /* ReactiveCocoaTests.octest */,
+				F815CA651969895C0006C4E1 /* ReactiveCocoaTests-iOS.octest */,
+				F815CA671969895C0006C4E1 /* ReactiveCocoa-iOS-UIKitTestHost.app */,
+				F815CA691969895C0006C4E1 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */,
+				F815CA6B1969895C0006C4E1 /* libReactiveCocoa-Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1472,8 +1586,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = F815CA43196989520006C4E1 /* Products */;
+					ProjectRef = F815CA42196989520006C4E1 /* Mantle.xcodeproj */;
+				},
+				{
 					ProductGroup = D0476E37177919200071F3CB /* Products */;
 					ProjectRef = D0476E36177919200071F3CB /* OctoKitDependencies.xcodeproj */;
+				},
+				{
+					ProductGroup = F815CA551969895C0006C4E1 /* Products */;
+					ProjectRef = F815CA541969895C0006C4E1 /* ReactiveCocoa.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1513,6 +1635,90 @@
 			fileType = archive.ar;
 			path = libISO8601DateFormatter.a;
 			remoteRef = D0476EB417791C280071F3CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA4B196989530006C4E1 /* Mantle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Mantle.framework;
+			remoteRef = F815CA4A196989530006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA4D196989530006C4E1 /* Mantle Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Mantle Tests.octest";
+			remoteRef = F815CA4C196989530006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA4F196989530006C4E1 /* libMantle-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMantle-iOS.a";
+			remoteRef = F815CA4E196989530006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA51196989530006C4E1 /* Mantle-iOS Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Mantle-iOS Tests.octest";
+			remoteRef = F815CA50196989530006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA53196989530006C4E1 /* libMantle-Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMantle-Mac.a";
+			remoteRef = F815CA52196989530006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA5F1969895C0006C4E1 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = F815CA5E1969895C0006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA611969895C0006C4E1 /* libReactiveCocoa-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-iOS.a";
+			remoteRef = F815CA601969895C0006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA631969895C0006C4E1 /* ReactiveCocoaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.octest;
+			remoteRef = F815CA621969895C0006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA651969895C0006C4E1 /* ReactiveCocoaTests-iOS.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoaTests-iOS.octest";
+			remoteRef = F815CA641969895C0006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA671969895C0006C4E1 /* ReactiveCocoa-iOS-UIKitTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "ReactiveCocoa-iOS-UIKitTestHost.app";
+			remoteRef = F815CA661969895C0006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA691969895C0006C4E1 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-iOS-UIKitTestHostTests.octest";
+			remoteRef = F815CA681969895C0006C4E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F815CA6B1969895C0006C4E1 /* libReactiveCocoa-Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-Mac.a";
+			remoteRef = F815CA6A1969895C0006C4E1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
