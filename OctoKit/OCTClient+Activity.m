@@ -56,7 +56,7 @@
 - (RACSignal *)createIssueWithTitle:(NSString*)title
 							   body:(NSString*)body
 						   assignee:(OCTUser*)assignee
-						  milestone:(NSString*)milestone
+						  milestone:(int64_t)milestone
 							 labels:(NSArray*)labels
 					   inRepository:(OCTRepository *)repository {
 	NSParameterAssert(title != nil);
@@ -69,6 +69,12 @@
 	}
 	if (assignee){
 		parameters[@"assignee"] = assignee.name;
+	}
+	if (milestone!=0){
+		parameters[@"milestone"] = @(milestone);
+	}
+	if (labels){
+		parameters[@"labels"] = labels;
 	}
 	
 	NSString *path = [NSString stringWithFormat:@"repos/%@/%@/issues", repository.ownerLogin, repository.name];

@@ -39,7 +39,7 @@
 - (RACSignal *)createIssueWithTitle:(NSString*)title
 							   body:(NSString*)body
 						   assignee:(OCTUser*)assignee
-						  milestone:(NSString*)milestone
+						  milestone:(int64_t)milestone
 							 labels:(NSArray*)labels
 					   inRepository:(OCTRepository *)repository;
 
