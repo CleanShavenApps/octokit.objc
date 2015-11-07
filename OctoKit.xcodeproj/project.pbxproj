@@ -1526,7 +1526,7 @@
 			name = "OctoKit Mac Tests";
 			productName = OctoClientTests;
 			productReference = D0871EC0169E2EFC00016ACA /* OctoKit Mac Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		D0871FE3169E309900016ACA /* OctoKit iOS */ = {
 			isa = PBXNativeTarget;
@@ -1563,7 +1563,7 @@
 			name = "OctoKit iOS Tests";
 			productName = OctoClientTests;
 			productReference = D0871FF3169E309A00016ACA /* OctoKit iOS Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -2155,6 +2155,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OBJROOT)/UninstalledProducts/include",
 					"$(inherited)",
+					"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = OctoKit;
@@ -2169,6 +2170,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OBJROOT)/UninstalledProducts/include",
 					"$(inherited)",
+					"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = OctoKit;
@@ -2280,6 +2282,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OBJROOT)/UninstalledProducts/include",
 					"$(inherited)",
+					"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = OctoKit;
